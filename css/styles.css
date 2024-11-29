@@ -1,0 +1,490 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.hero a.btn-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+}
+
+/* Features Section */
+.feature-icon {
+    width: 60px;
+    height: 60px;
+}
+
+#features h2 {
+    font-weight: 600;
+}
+
+#features .btn-outline-primary {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#features .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: linear-gradient(to right, #0066cc, #00ccff);
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.testimonials footer {
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Footer Links */
+footer a {
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* About Us Page */
+.about-us h2 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.team img {
+    border: 5px solid #0066cc;
+}
+
+.sustainability h3 {
+    color: #28a745;
+}
+
+/* Features Page */
+
+/* Features Intro */
+.features-intro h1 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.features-intro p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Charts Section */
+.charts canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Use Cases Section */
+.use-cases h4 {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.use-cases p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Technology Trustworthiness */
+.trustworthiness h4 {
+    color: #ff8800;
+    font-weight: 600;
+}
+
+/* CTA Buttons Section */
+.cta-buttons h4 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.cta-buttons p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn-outline-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Demo Page */
+
+/* Demo Section */
+.demo h1 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.demo p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.demo input {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.demo button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.demo button:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* CTA Section */
+.cta-buttons h4 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.cta-buttons p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.cta-buttons .btn-outline-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Pricing Page */
+
+/* Pricing Section */
+.pricing h1 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.pricing p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.pricing .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.pricing .card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing .card-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.pricing .card-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pricing .list-unstyled {
+    text-align: left;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.pricing .list-unstyled li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* CTA Section */
+.cta-buttons h4 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.cta-buttons p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cta-buttons .btn-outline-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Pricing CTA Section */
+.cta-pricing h4 {
+    font-weight: 700;
+    color: #0066cc;
+}
+
+.cta-pricing p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta-pricing .btn-outline-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+}
+
+.cta-pricing .btn-outline-primary:hover {
+    background-color: #0066cc;
+    color: #fff;
+}
+
+/* Blog Hero Section */
+.blog-hero {
+    background: url('assets/blog-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.blog-hero h1 {
+    font-weight: 700;
+}
+
+.blog-hero p {
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* Blog Posts Section */
+.blog-posts h2 {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Contact Hero Section */
+.contact-hero {
+    background: url('assets/contact-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contact-hero h1 {
+    font-weight: 700;
+}
+
+.contact-hero p {
+    font-size: 1.2rem;
+}
+
+/* Contact Form Section */
+.contact-form h2 {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+}
+
+.contact-form input, 
+.contact-form textarea, 
+.contact-form select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+/* Contact Details Section */
+.contact-details h3 {
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.contact-details a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Investor Hero Section */
+.investor-hero {
+    background: url('assets/investor-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.investor-hero h1 {
+    font-weight: 700;
+}
+
+.investor-hero p {
+    font-size: 1.2rem;
+}
+
+/* Case Studies Hero Section */
+.case-studies-hero {
+    background: url('assets/case-studies-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.case-studies-hero h1 {
+    font-weight: 700;
+}
+
+.case-studies-hero p {
+    font-size: 1.2rem;
+}
+
+/* Card Hover Effect for Case Studies */
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.card .btn {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Navbar Active Link */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #f8c800 !important;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+

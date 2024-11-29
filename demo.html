@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Demo - Travel Trends</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" width="40" class="me-2"> Travel Trends
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="demo.html">Demo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="investor.html">Investors</a></li>
+                </ul>                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demo Section -->
+    <section class="demo py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Interactive Travel Trends Demo</h1>
+            <p class="text-center lead">
+                Enter a destination below to see search trends and explore how our forecasting platform works.
+            </p>
+            <div class="text-center mt-4 mb-5">
+                <input type="text" id="destinationInput" class="form-control w-50 mx-auto" placeholder="Enter a destination (e.g., Paris)">
+                <button id="updateChart" class="btn btn-primary mt-3">Show Trends</button>
+            </div>
+            <canvas id="trendChart" height="100"></canvas>
+        </div>
+    </section>
+
+    <section class="forecast-game py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Can You Predict the Next Trend?</h2>
+            <p class="text-center">Guess the trend for a destination, and see how our tool compares.</p>
+            <div class="text-center mt-4">
+                <input type="text" class="form-control w-50 mx-auto" placeholder="Enter a destination (e.g., Bali)">
+                <button class="btn btn-primary mt-3">Submit Guess</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="report-generator py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Generate Your Sample Report</h2>
+            <form action="generate-report.php" method="POST" class="mx-auto" style="max-width: 600px;">
+                <div class="mb-3">
+                    <label for="destination" class="form-label">Destination</label>
+                    <input type="text" class="form-control" id="destination" name="destination" placeholder="Enter a destination">
+                </div>
+                <div class="mb-3">
+                    <label for="dateRange" class="form-label">Date Range</label>
+                    <input type="text" class="form-control" id="dateRange" name="dateRange" placeholder="e.g., Jan 2023 - Dec 2023">
+                </div>
+                <button type="submit" class="btn btn-primary">Generate Report</button>
+            </form>
+        </div>
+    </section>    
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-buttons text-center py-5 bg-light">
+        <h4>Discover Flexible Pricing Plans</h4>
+        <p>Choose a plan that fits your business needs and unlock the full power of travel analytics.</p>
+        <a href="pricing.html" class="btn btn-outline-primary btn-lg mt-3">View Pricing</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white py-3">
+        <p>
+            <a href="index.html" class="text-white">Home</a> |
+            <a href="features.html" class="text-white">Features</a> |
+            <a href="demo.html" class="text-white">Demo</a> |
+            <a href="pricing.html" class="text-white">Pricing</a> |
+            <a href="about.html" class="text-white">About Us</a> |
+            <a href="blog.html" class="text-white">Blog</a> |
+            <a href="contact.html" class="text-white">Contact</a> |
+            <a href="case-studies.html" class="text-white">Case Studies</a> |
+            <a href="investor.html" class="text-white">Investor</a>
+        </p>
+        <p>&copy; 2024 Travel Trends. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Chart.js Initialization
+        const ctx = document.getElementById('trendChart').getContext('2d');
+        let trendChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'Search Interest',
+                    data: [50, 70, 60, 90, 80],
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true
+                    }
+                }
+            }
+        });
+
+        // Update Chart based on User Input
+        document.getElementById('updateChart').addEventListener('click', function () {
+            const destination = document.getElementById('destinationInput').value || 'Destination';
+            trendChart.data.datasets[0].label = `Search Interest for ${destination}`;
+            trendChart.update();
+        });
+    </script>
+</body>
+</html>
