@@ -416,23 +416,31 @@ footer a:hover {
 }
 
 /* Investor Hero Section */
-.investor-hero {
-    background: url('assets/investor-hero.jpg') no-repeat center center/cover;
-    height: 300px;
-    color: #fff;
-    text-align: center;
+.hero {
+    background: url('assets/investor-hero-wide-image.png') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    position: relative;
 }
 
-.investor-hero h1 {
+.hero h1 {
     font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-.investor-hero p {
+.hero p {
+    font-weight: 300;
     font-size: 1.2rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.hero a.btn-primary {
+    font-size: 1.2rem;
+    padding: 10px 30px;
 }
 
 /* Case Studies Hero Section */
