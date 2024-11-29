@@ -488,3 +488,11 @@ footer a:hover {
     border-radius: 5px;
 }
 
+.hero {
+    background: url('path-to-your-image/A_stunning_wide_background_image_for_a_hero_sectio.png') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
